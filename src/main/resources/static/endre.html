@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Motorvognregister</title>
+    <script src="validering.js"></script>
+    <script src="endre.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary" onclick="loggut">Logg ut</button>
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Motorvognregister</h1>
+                <form class="form">
+                    <input type="text" id="id" hidden/>
+                    <div class="form-group">
+                        <label for="personnr">Personnr</label>
+                        <input type="text" class="form-control" id="personnr" onchange="validerPersonnr(this.value)"/>
+                        <div id="feilPersonnr"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="navn">Navn</label>
+                        <input type="text" class="form-control" id="navn" onchange="validerNavn(this.value)"/>
+                        <div id="feilNavn"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" class="form-control" id="adresse" onchange="validerAdresse(this.value)"/>
+                        <div id="feilAdresse"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kjennetegn">Kjennetegn</label>
+                        <input type="text" class="form-control" id="kjennetegn" onchange="validerKjennetegn(this.value)"/>
+                        <div id="feilKjennetegn"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="merke">Merke</label>
+                        <div id="merke" class="dropdown">
+                        </div>
+                        <div id="feilMerke"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <div id="type" class="dropdown">
+                        </div>
+                    </div>
+                </form>
+                <button class="btn btn-primary" onclick="validerOgEndreMotorvogn()">Endre</button><br/>
+            </div>
+        </div>
+    </div>
+    <div id="feil"></div>
+</body>
+</html>
