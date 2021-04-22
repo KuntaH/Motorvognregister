@@ -56,7 +56,6 @@ public class MotorvognRepository {
          String sql = "UPDATE Motorvogn SET personnr=?, navn=?,adresse=?,kjennetegn=?,merke=?,type=? where id=?";
          try{
              db.update(sql,m.getPersonnr(),m.getNavn(),m.getAdresse(),m.getKjennetegn(),m.getMerke(),m.getType(),m.getId());
-             System.out.println("Vellykket lagring i db");
              return true;
          }
          catch(Exception e){

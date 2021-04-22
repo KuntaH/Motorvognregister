@@ -54,7 +54,6 @@ public class MotorvognController {
 
     @PostMapping("/lagre")
     public void lagreMotorvogn(Motorvogn motorvogn, HttpServletResponse response) throws IOException {
-        System.out.println("larger i controller.");
         if(!validerMotorvogn(motorvogn)){
             response.sendError(HttpStatus.INTERNAL_SERVER_ERROR.value(), "Feil i inputvalidering");
         } else{

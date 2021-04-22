@@ -1,0 +1,85 @@
+/*Navbar*/
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed !important;
+    z-index: 15;
+}
+
+.logo {
+    padding: 50px 25% 0 5%;
+    font-weight: bold !important;
+    color: antiquewhite;
+    font-family: aquafina sript;
+}
+
+.category-links {
+    height: 100%;
+    padding-top: 60px;
+    padding-right: 10%;
+}
+
+.category-link {
+    height: 100%;
+    padding: 60px 20px 20px;
+    color: antiquewhite;
+    font-weight: bold !important;
+}
+
+.active {
+    background-color: #ee151f;
+    color: antiquewhite;
+    border-radius: 0 0 20% 20%;
+}
+
+.category-link:hover {
+    background-color: #ee151f;
+    color: antiquewhite;
+    border-radius: 0 0 20% 20%;
+    text-decoration: none;
+}
+
+.nav-other {
+    padding: 60px 30px 20px;
+}
+.nav-other a {
+    padding: 60px 30px 20px;
+    color: antiquewhite;
+}
+
+.nav-other a:hover {
+    background-color: #ee151f;
+    color: antiquewhite;
+    border-radius: 0 0 20% 20%;
+}
+
+/*Navbar end*/
+
+header{
+    width: 100%;
+    height: 900px;
+}
+
+.header-innhold{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("bilder/ms-main-hero-desktop tesla.jpg");
+    background-size: cover;
+    color: white;
+}
+
+section{
+    padding: 200px 0;
+}
+
+.headline{
+    width: 400px;
+    display: block;
+    margin: 250px auto 0;
+    text-align: center;
+}
+
+.tekst{
+    padding: 50px 0;
+}
