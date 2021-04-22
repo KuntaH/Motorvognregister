@@ -6,10 +6,18 @@ function hentAlle() {
     $.get( "/hentAlle", function( biler ) {
         formaterData(biler);
         })
+        .fail(function (status){
+            if(status.status=="404"){
+                $("#feil").html("Må logge inn for å se tabellen.");
+            }
+        });
+        /*
         .fail(function(jqXHR) {
             const json = $.parseJSON(jqXHR.responseText);
             $("#feil").html(json.message);
         });
+
+         */
 }
 
 function formaterData(biler) {

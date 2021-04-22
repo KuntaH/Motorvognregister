@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <title>Login</title>
+    <script src="validering.js"></script>
+    <script src="login.js"></script>
 </head>
 <body>
 <div class="container text-center" style="padding-top: 100px">
@@ -25,10 +27,11 @@
                 </div>
             </form>
             <div id="formFeil" style="color: red"></div>
-            <button class="btn btn-primary" onclick="logginn()">Registrer</button><br/>
+            <button class="btn btn-primary" onclick="validerOgLogin()">Logg inn</button><br/>
             <a href="lagreKunde.html">Register en bruker</a>
+            <div id="feil" style="color: red"></div>
         </div>
     </div>
-    <div id="fail"></div>
+
 </body>
 </html>

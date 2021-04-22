@@ -90,7 +90,7 @@ public class KundeRepository {
     }
 
     public boolean sjekkNavnOgPassord(Kunde kunde){
-        String sql = "SELECT æ FROM Kunde WHERE navn=?";
+        String sql = "SELECT * FROM Kunde WHERE navn=?";
         try{
             Kunde dbKunde = db.queryForObject(sql, BeanPropertyRowMapper.newInstance(Kunde.class),new Object[]{kunde.getNavn()});
             return sjekkPassord(dbKunde.getPassord(),kunde.getPassord());

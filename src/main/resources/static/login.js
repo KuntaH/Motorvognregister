@@ -6,6 +6,13 @@ function validerOgLogin(){
     }
 }
 
+function logout(){
+    const url = "/logout";
+    $.get( url, function() {
+        window.location.href = 'login.html';
+    })
+}
+
 function login(){
     const kunde = {
         navn: $("#navn").val(),
@@ -14,11 +21,11 @@ function login(){
 
     const url = "/login";
 
-    $.post(url, kunde, function (innlogget){
+    $.get(url, kunde, function(innlogget){
         if(innlogget){
             window.location.href = "index.html";
         } else {
-            $("#feil").html("Feil brukernavn eller passord");
+            $("#formFeil").html("Feil brukernavn eller passord");
         }
     }).fail(function(jqXHR) {
         const json = $.parseJSON(jqXHR.responseText);
