@@ -24,5 +24,5 @@ CREATE TABLE Kunde
     navn VARCHAR(255) NOT NULL,
     adresse VARCHAR(255) NOT NULL,
     passord VARCHAR(255) NOT NULL,
-    primary key (id)
+    PRIMARY KEY (id)
 );
