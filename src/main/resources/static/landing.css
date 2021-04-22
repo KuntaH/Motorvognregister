@@ -1,22 +1,35 @@
-/*Navbar*/
-nav {
-    top: 0;
+/*Nav*/
+nav{
+    position: fixed;
     width: 100%;
-    position: fixed !important;
-    z-index: 15;
 }
 
-.logo {
-    padding: 50px 25% 0 5%;
-    font-weight: bold !important;
-    color: antiquewhite;
-    font-family: aquafina sript;
+nav .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav .container .row{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav .row .col-md-4{
+
 }
 
 .category-links {
+    display: inline-block;
     height: 100%;
     padding-top: 60px;
-    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: inline-block;
 }
 
 .category-link {
@@ -38,26 +51,12 @@ nav {
     border-radius: 0 0 20% 20%;
     text-decoration: none;
 }
-
-.nav-other {
-    padding: 60px 30px 20px;
-}
-.nav-other a {
-    padding: 60px 30px 20px;
-    color: antiquewhite;
-}
-
-.nav-other a:hover {
-    background-color: #ee151f;
-    color: antiquewhite;
-    border-radius: 0 0 20% 20%;
-}
-
-/*Navbar end*/
+/*Nav*/
 
 header{
     width: 100%;
     height: 900px;
+    padding: 0;
 }
 
 .header-innhold{
@@ -82,4 +81,12 @@ section{
 
 .tekst{
     padding: 50px 0;
+}
+
+.bmw{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("bilder/hvit_BMW_ix3_1200x630_some.jpg");
+    background-size: cover;
+    background-position: bottom;
 }

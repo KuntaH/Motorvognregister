@@ -17,3 +17,12 @@ CREATE TABLE Bil
     type VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE Kunde
+(
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    navn VARCHAR(255) NOT NULL,
+    adresse VARCHAR(255) NOT NULL,
+    passord VARCHAR(255) NOT NULL,
+    primary key (id)
+);
