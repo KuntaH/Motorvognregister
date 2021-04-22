@@ -34,6 +34,18 @@ function validerAdresse(adresse){
     }
 }
 
+function validerPassord(passord){
+    const regexp = /(?=.*[a-zA-ZæøåÆØÅ])(?=.*\d)[a-zA-ZæøåÆØÅ\d]{8,}/;
+    const ok = regexp.test(passord);
+    if(!ok){
+        $("#feilPassord").html("Passord må inneholde minst 8 tall og ett tall.");
+        return false;
+    }else {
+        $("#feilPassord").html(" ");
+        return true;
+    }
+}
+
 function validerKjennetegn(kjennetegn){
     const regexp = /^[0-9a-zA-ZæøåÆØÅ. \-]{2,50}$/;
     const ok = regexp.test(kjennetegn);

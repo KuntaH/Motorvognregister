@@ -73,7 +73,7 @@ function regMotorvogn() {
     })
         .fail(function(jqXHR) {
             const json = $.parseJSON(jqXHR.responseText);
-            $("#formFeil").html(json.message);
+            $("#feil").html(json.message);
         });
 }
 

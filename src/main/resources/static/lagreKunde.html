@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lagreKunde.js"></script>
+    <script src="validering.js"></script>
+
+</head>
+<body>
+<div class="container text-center" style="padding-top: 100px">
+    <div class="login">
+        <h1>Logg inn</h1>
+        <form class="form">
+            <div class="form-group">
+                <label for="personnr">Personnummer</label>
+                <br>
+                <input type="text" id="personnr" style="width: 250px" onchange="validerPersonnr(this.value)">
+                <div id="feilPersonnr"></div>
+            </div>
+            <div class="form-group">
+                <label for="navn">Navn</label>
+                <br>
+                <input type="text" id="navn" style="width: 250px" onchange="validerNavn(this.value)">
+                <div id="feilNavn"></div>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse</label>
+                <br>
+                <input type="text" id="adresse" style="width: 250px" onchange="validerAdresse(this.value)">
+                <div id="feilAdresse"></div>
+            </div>
+            <div class="form-group">
+                <label for="passord">Passord</label>
+                <br>
+                <input type="text" id="passord" style="width: 250px" onchange="validerPassord(this.value)">
+                <div id="feilPassord"></div>
+            </div>
+        </form>
+        <div id="formFeil" style="color: red"></div>
+        <button class="btn btn-primary" onclick="validerOgLagreKunde()">Registrer</button><br/>
+    </div>
+</div>
+<div id="fail"></div>
+</body>
+</html>

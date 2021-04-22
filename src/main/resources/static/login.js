@@ -1,7 +1,7 @@
 function validerOgLogin(){
     const navnOk = validerNavn($("#navn").val());
-
-    if(navnOk){
+    const passordOk = validerPassord($("#passord").val());
+    if(navnOk && passordOk){
         login();
     }
 }
